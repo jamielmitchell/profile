@@ -10,8 +10,8 @@
 locale                   : "en-US"
 title                    : "Jamie Mitchell / Personal Website"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Jamie Mitchell"
+description              : &description "Personal Website"
 url                      : https://jamielmitchell.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "/profile" # the subpath of your site, e.g. "/blog"
 repository               : "jamielmitchell/profile.github.io"
@@ -24,19 +24,19 @@ author:
   avatar           : "profile.png"
   name             : "Jamie Mitchell"
   pronouns         : # example: "she/her"  
-  bio              : "PhD candidate studying developmental cognitive neuroscience"
+  bio              : "Developmental cognitive neurosientist studying reading and the brain."
   location         : "Palo Alto, CA"
   employer         : "Stanford University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "jamiel12@stanford.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=W2usbdQAAAAJ&hl=en"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0002-0854-1875"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
 
@@ -44,12 +44,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "jamielmitchell"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : "https://bsky.app/profile/jamielmitchell.bsky.social"
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/jamielmitchell/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
