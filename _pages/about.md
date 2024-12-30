@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![Illustration of girl studying reading, dyslexia, and the brain](/images/interests.png){:.align-right width="300px"}
+![Illustration of girl studying reading, dyslexia, and the brain](/images/profile.png){:.align-right width="300px"}
 - I'm a PhD candidate at the Stanford University Graduate School of Education.
 
 - I study developmental cognitive neuroscience in the context of reading and dyslexia research.
