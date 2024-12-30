@@ -12,8 +12,8 @@ title                    : "Jamie Mitchell / Personal Website"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+url                      : https://jamielmitchell.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+baseurl                  : "/profile" # the subpath of your site, e.g. "/blog"
 repository               : "jamielmitchell/profile.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -22,11 +22,11 @@ repository               : "jamielmitchell/profile.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Jamie Mitchell"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "PhD candidate studying developmental cognitive neuroscience"
+  location         : "Palo Alto, CA"
+  employer         : "Stanford University"
   uri              : # URL
   email            : "none@example.org" 
 
