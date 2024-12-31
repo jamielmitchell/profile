@@ -11,9 +11,16 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* PhD, Stanford University, 2025 (expected)
+  * Graduate School of Education
+  * Concentration: Developmental and Psychological Sciences
+  * Minor: Psychology
+  * Area of study: Developmental Cognitive Neuroscience
+* B.A., University of California, Irvine, 2018
+  * Major: Education Sciences
+  * Concentration: Children’s Learning and Development
+  * Minor: Psychology and Social Behavior
+
 
 Work experience
 ======

@@ -6,8 +6,8 @@
 
 main:
   - title: "CV"
-    # url: /cv/
-    url: /files/Mitchell_CV_long.pdf
+    url: /cv/
+    # url: /files/Mitchell_CV_long.pdf
 
   - title: "Publications"
     url: /publications/
