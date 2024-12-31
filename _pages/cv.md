@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-You can see a full-length version of my CV [here](github.com/jamielmitchell/profile/files/Mitchell_CV_long.pdf).
+You can see a full-length version of my CV [here](https://github.com/jamielmitchell/profile/files/Mitchell_CV_long.pdf).
 
 Education
 ======
