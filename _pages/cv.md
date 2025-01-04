@@ -54,16 +54,16 @@ Honors Program Research Advisor: Michael Cassens
   
 Skills
 ======
-MRI certified
-Certified to independently operate the 3T scanner at the Stanford Center for Neurobiological Imaging
-Working knowledge of several coding and statistical languages
-* Python, R, MatLab, Julia, command line
-Experience preprocessing and analyzing neuroimaging datasets
-Experience with neuroimaging-specific software
-* Nilearn, NiBable, BrainIAK, FreeSurfer, MRIcron, FMRIPrep, BIDS formatting, vistasoft, SPM, CONN
-Experience working with children ages 3-18 in various contexts
-Working knowledge of FileMaker, classroom observation systems, and various testing materials
-American Sign Language (Limited Proficiency)
+* MRI certified
+* Certified to independently operate the 3T scanner at the Stanford Center for Neurobiological Imaging
+* Working knowledge of several coding and statistical languages
+  * Python, R, MatLab, Julia, command line
+* Experience preprocessing and analyzing neuroimaging datasets
+* Experience with neuroimaging-specific software
+  * Nilearn, NiBable, BrainIAK, FreeSurfer, MRIcron, FMRIPrep, BIDS formatting, vistasoft, SPM, CONN
+* Experience working with children ages 3-18 in various contexts
+* Working knowledge of FileMaker, classroom observation systems, and various testing materials
+* American Sign Language (Limited Proficiency)
 
 Service and leadership
 ======
