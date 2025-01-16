@@ -17,7 +17,7 @@ Preprint
 
 Recommended Citation
 ===
-Stone, H. L., Mitchell, J. L., Fuentes-Jimenez, M., Tran, J. E., Yeatman, J. D., & Yablonski, M. (2024). Anatomically distinct regions in the inferior frontal cortex are modulated by task and reading skill. bioRxiv, 2024.09.11.612349. https://doi.org/10.1101/2024.09.11.612349
+Stone, H. L., Mitchell, J. L., Fuentes-Jimenez, M., Tran, J. E., Yeatman, J. D., & Yablonski, M. (2024). Anatomically distinct regions in the inferior frontal cortex are modulated by task and reading skill. bioRxiv, 2024.09.11.612349. [https://doi.org/10.1101/2024.09.11.612349](https://doi.org/10.1101/2024.09.11.612349)
 
 Abstract
 ======

@@ -17,7 +17,7 @@ Preprint
 
 Recommended Citation
 ===
-Mitchell, J. L., Yablonski, M., Stone, H. L., Fuentes-Jimenez, M., Takada, M., Tang, K. A., Tran, J. E., Chou, C., & Yeatman, J. D. (2025). Small or absent Visual Word Form Area is a trait of dyslexia. https://doi.org/10.1101/2025.01.14.632854 
+Mitchell, J. L., Yablonski, M., Stone, H. L., Fuentes-Jimenez, M., Takada, M., Tang, K. A., Tran, J. E., Chou, C., & Yeatman, J. D. (2025). Small or absent Visual Word Form Area is a trait of dyslexia. [https://doi.org/10.1101/2025.01.14.632854](https://doi.org/10.1101/2025.01.14.632854)
 
 Abstract
 ======
