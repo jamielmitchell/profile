@@ -1,5 +1,5 @@
 ---
-title: "ASmall or absent Visual Word Form Area is a trait of dyslexia [Preprint]"
+title: "A small or absent Visual Word Form Area is a trait of dyslexia [Preprint]"
 collection: publications
 category: Preprints
 permalink: /publication/2025-01-15-Mitchell_VWFA_PrePrint
