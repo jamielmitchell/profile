@@ -13,7 +13,7 @@ citation:
 
 Publication Type
 ===
-Preprint
+Preprint - Currently under review
 
 Recommended Citation
 ===
