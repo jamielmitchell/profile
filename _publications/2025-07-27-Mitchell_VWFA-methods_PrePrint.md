@@ -4,7 +4,7 @@ collection: publications
 category: Preprints
 permalink: /publication/2025-07-27-Mitchell_VWFA-methods_PrePrint
 excerpt: 
-date: 2025-07-127
+date: 2025-07-27
 venue: 'biorxiv'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://www.biorxiv.org/content/10.1101/2025.07.23.666206v1'
