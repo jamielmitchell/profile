@@ -10,7 +10,7 @@ location: "Stanford, California"
 
 Terms Taught
 ======
-Fall 2024
+Fall 2024 & Fall 2025
 
 Course Description
 ======

@@ -15,7 +15,7 @@ redirect_from:
 
 - I want to use the skills I've learned during my PhD to help people who struggle learning to read.
 
-- I am married to my high school sweetheart (who is also pursuing his PhD at Stanford in Computational and Theoretical Chemisty) and together we are raising our puppy dog Baloo. And yes, I am a crazy dog mom and proud of it!
+- I am graduating in winter of 2026 and am looking for work! Please reach out if you think I could be a good fit for you/your team!
 
 Research Interests
 ======
