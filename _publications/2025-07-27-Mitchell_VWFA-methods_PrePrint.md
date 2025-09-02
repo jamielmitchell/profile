@@ -13,11 +13,11 @@ citation:
 
 Publication Type
 ===
-Preprint 
+Preprint - Currently under review
 
 Recommended Citation
 ===
-Mitchell, J. L., Fuentes-Jimenez, M., Stone, H. L., Yablonski, M. & Yeatman, J. D. Visual Word Form Area demonstrates individual and task-agnostic consistency but inter-individual variability. bioRxiv 2025.07.23.666206 (2025) doi:10.1101/2025.07.23.666206.
+Mitchell, J. L., Fuentes-Jimenez, M., Stone, H. L., Yablonski, M. & Yeatman, J. D. Visual Word Form Area demonstrates individual and task-agnostic consistency but inter-individual variability. bioRxiv 2025.07.23.666206 (2025) doi:[10.1101/2025.07.23.666206](https://www.biorxiv.org/content/10.1101/2025.07.23.666206v1).
 
 Abstract
 ======
