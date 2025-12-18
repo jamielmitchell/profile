@@ -28,4 +28,4 @@ As a Teaching Fellow for EDUC 464, I was responsible for creating and grading al
 
 Teaching Reviews
 ======
-See course evaluation results for all sections of this course [here](https://drive.google.com/file/d/1TvEaXv6grl7qPA5pRd0MaA5fXMK0kcK9/view?usp=sharing).
+See course evaluation results for all sections of this course [here](https://drive.google.com/drive/folders/1fG33hYnBNGXNM0oxceMvzMbpps5XqfgQ?usp=sharing){:target="_blank"}.

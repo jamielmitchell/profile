@@ -23,4 +23,4 @@ As a Teaching Fellow for the Psych One program, I was responsible for leading 1-
 
 Teaching Reviews
 ======
-See course revaluation results for all sections of this course [here](https://drive.google.com/drive/folders/1KuYbzqYwrUVwOL1bG9YirsUTXIaDESDZ?usp=sharing).
+See course revaluation results for all sections of this course [here](https://drive.google.com/drive/folders/1KuYbzqYwrUVwOL1bG9YirsUTXIaDESDZ?usp=sharing){:target="_blank"}.
