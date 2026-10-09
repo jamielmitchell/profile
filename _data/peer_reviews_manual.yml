@@ -1,0 +1,31 @@
+# ============================================================================
+# Peer reviews that aren't on your ORCID record
+# ----------------------------------------------------------------------------
+# Add one entry per review (two lines each, copy the example format below).
+# These are combined with your ORCID reviews on the Service page, which lists
+# each journal once, alphabetically, with the years you reviewed for it.
+#
+# Tips:
+#   - Spell the journal name exactly as it appears elsewhere on the Service
+#     page (e.g. "Brain and Language") so reviews for the same journal combine.
+#   - Type the year as a plain number, no quotes.
+#   - If a review later shows up on ORCID, delete it here so it isn't counted twice.
+#
+# Example:
+#   - journal: NeuroImage
+#     year: 2025
+# ============================================================================
+
+# One entry per round of review
+- journal: Imaging Neuroscience
+  year: 2024
+- journal: Imaging Neuroscience
+  year: 2024
+- journal: Neurobiology of Language
+  year: 2024
+- journal: Neurobiology of Language
+  year: 2024
+- journal: Language, Cognition and Neuroscience
+  year: 2025
+- journal: Scientific Studies of Reading
+  year: 2025
