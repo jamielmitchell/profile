@@ -1,31 +1,36 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <header class="masthead">
+    <nav class="masthead__inner">
+      <a class="masthead__name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <ul class="masthead__menu">
+        {% for link in site.data.navigation %}
+          {% assign link_url = link.url | relative_url %}
+          <li><a href="{{ link_url }}"{% if page.url == link.url %} class="active" aria-current="page"{% endif %}>{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
 
-  <body>
+  <div class="layout">
+    {% include sidebar.html %}
+    <main class="content">
+      {% if page.title and page.hide_title != true %}<h1 class="page-title">{{ page.title }}</h1>{% endif %}
+      {{ content }}
+    </main>
+  </div>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+  <footer class="footer">
+    &copy; {{ site.time | date: "%Y" }} {{ site.author.name }} &middot; Last updated {{ site.time | date: "%B %-d, %Y" }}
+  </footer>
+</body>
 </html>

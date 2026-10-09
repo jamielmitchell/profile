@@ -1,119 +1,92 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Jamie Mitchell · Personal Website
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+Live at **https://jamielmitchell.github.io/profile/**
 
-# Getting Started
+## Where to edit what
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+| I want to change… | Edit this file |
+|---|---|
+| The About page (home page) | `index.md` |
+| The CV page | `cv.md` |
+| The downloadable CV PDF | Replace `assets/files/Mitchell_CV_long.pdf` (keep the same name) |
+| Teaching | `teaching.md` |
+| Service, leadership, mentorship | `service.md` |
+| My name, sidebar bio, location, or profile links | `_config.yml` |
+| My photo | Replace `assets/images/profile.jpg` (keep the same name) |
+| The top menu (add, remove, or reorder pages) | `_data/navigation.yml` |
+| Colors and fonts | The top of `assets/css/site.css` |
+| Hide, fix, or add a publication | `_data/publication_settings.yml` |
 
-See more info at https://academicpages.github.io/
+Pages are written in [Markdown](https://www.markdownguide.org/cheat-sheet/): `## Heading`, `**bold**`, `*italic*`, `- bullet`, `[link text](https://...)`.
 
-## Running locally
+### Adding a new page
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+1. Copy `service.md` to a new file, e.g. `talks.md`.
+2. Change the `title:` and `permalink:` at the top (e.g. `permalink: /talks/`).
+3. Add it to the menu in `_data/navigation.yml`.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## Publications and peer reviews update themselves
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+The Publications page and the Peer Review list on the Service page are built
+from your [ORCID record](https://orcid.org/0009-0002-0854-1875). Every Monday
+(and every time you push a change), GitHub:
 
-## Using Docker
+1. pulls your works and peer reviews from ORCID,
+2. looks up full author lists and abstracts on Crossref,
+3. combines each preprint with its published version,
+4. links your datasets and code to the paper they belong to,
+5. highlights papers where you're first author.
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+**To add a publication:** add it to ORCID. It'll appear on the site the next Monday.
+To update right away: on GitHub, go to **Actions → Update from ORCID and deploy → Run workflow**.
 
-Start by build the container:
+**To tweak how a publication shows up** (hide one, mark co-first authorship,
+add a note like "Under review", add something that isn't on ORCID), edit
+`_data/publication_settings.yml`. Instructions are inside the file.
 
-```bash
-docker build -t jekyll-site .
+Don't edit `_data/publications.json` or `_data/peer_reviews.json` by hand.
+They get overwritten each time the site rebuilds.
+
+## Previewing changes on your computer
+
+One-time setup (already done on Jamie's Mac):
+
+```sh
+brew install ruby@3.3
+cd ~/claude_projects/profile
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
+bundle config set --local path vendor/bundle
+bundle install
 ```
 
-Next, run the container:
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
+Each time:
+
+```sh
+cd ~/claude_projects/profile
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
+bundle exec jekyll serve
 ```
 
-To run the `docker run` command on Windows, you need to adjust the syntax for the volume mapping (`-v`) as Windows uses different path formats. Here's how to run your command on Windows:
+Then open http://localhost:4000/profile/. Pages reload as you save
+(except `_config.yml`: stop with Ctrl+C and run the command again).
 
-### Steps for Windows:
-1. **Check Docker Installation**: Ensure Docker is installed and running.
-2. **Adjust Path for Volume Mapping**:
+To refresh the publication list locally: `python3 scripts/update_from_orcid.py`
 
-   - On Windows, replace `$(pwd)` with the full absolute path to your current directory. For example:
+## How the pieces fit together
 
-     ```bash
-     -v C:\path\to\your\site:/usr/src/app
-     ```
-
-### Full Command Example:
-```bash
-docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
 ```
-
-### Things to Keep in Mind:
-1. **Use PowerShell**:
-   - If you are using PowerShell, you can use `${PWD}` for the current directory:
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
-
-2. **Enable Docker File Sharing**:
-   - If your volume doesn't map correctly, ensure Docker has access to the drive where your project resides. To do this:
-     - Open Docker Desktop.
-     - Go to *Settings* → *Resources* → *File Sharing*.
-     - Add your drive (e.g., `C:`).
-
-3. **Run in Command Prompt or PowerShell**:
-   - In *Command Prompt*:
-   
-     ```bash
-     docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
-     ```
-   - In *PowerShell*:
-
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
-
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+index.md, cv.md, teaching.md,     ← your pages (edit these)
+  service.md, publications.md
+_config.yml                       ← name, sidebar, links
+_data/
+  navigation.yml                  ← top menu
+  publication_settings.yml        ← publication tweaks
+  publications.json               ← auto-generated from ORCID
+  peer_reviews.json               ← auto-generated from ORCID
+_layouts/default.html             ← page frame: menu + sidebar + footer
+_includes/sidebar.html            ← the sidebar
+_includes/publication.html        ← how one publication is displayed
+assets/                           ← stylesheet, images, CV PDF
+scripts/update_from_orcid.py      ← the ORCID updater
+.github/workflows/deploy.yml      ← tells GitHub to update and publish the site
+```

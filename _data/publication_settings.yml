@@ -1,0 +1,45 @@
+# ============================================================================
+# Publication settings
+# ----------------------------------------------------------------------------
+# Your publications list is built automatically from your ORCID record by
+# scripts/update_from_orcid.py (it runs weekly on GitHub, or on demand).
+# You never need to edit _data/publications.json by hand. Instead, use this
+# file to tweak how things show up.
+#
+# Publications are identified by DOI (the part after https://doi.org/).
+# ============================================================================
+
+orcid: "0009-0002-0854-1875"
+
+# Names you've published under. Used to bold your name in author lists and to
+# decide which papers are first-author (highlighted on the Publications page).
+my_names:
+  - family: Mitchell
+    given_initial: J
+  - family: Greenberg
+    given_initial: J
+
+# Count these as first-author papers even if you aren't listed first
+# (for example, co-first authorship).
+first_author: []
+#  - 10.1234/example.doi
+
+# Hide these from the site entirely.
+hide: []
+#  - 10.1234/example.doi
+
+# Override any field for a specific publication. Fields you can set:
+# title, venue, year, url, preprint_url, data_url, code_url, note, abstract
+fixes: {}
+#  "10.1234/example.doi":
+#    note: "Under review"
+
+# Add something that isn't in your ORCID record. Same fields as above,
+# plus authors (a list) and type (Journal article, Preprint, Book chapter...).
+extra: []
+#  - title: "Some talk or report"
+#    authors: ["Mitchell, J. L.", "Yeatman, J. D."]
+#    year: 2026
+#    venue: "Society for the Scientific Study of Reading"
+#    type: "Conference paper"
+#    url: "https://..."

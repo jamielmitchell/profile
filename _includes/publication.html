@@ -1,0 +1,27 @@
+{% assign pub = include.pub %}
+<article class="pub{% if pub.first_author %} pub--first{% endif %}">
+  <div class="pub__tags">
+    {% if pub.first_author %}<span class="tag tag--first">First author</span>{% endif %}
+    {% if pub.type != "Journal article" %}<span class="tag">{{ pub.type }}</span>{% endif %}
+  </div>
+  <h3 class="pub__title"><a href="{{ pub.url }}">{{ pub.title | escape }}</a></h3>
+  <p class="pub__authors">
+    {%- for a in pub.authors -%}
+      {%- if a.me %}<strong>{{ a.name | escape }}</strong>{% else %}{{ a.name | escape }}{% endif -%}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor -%}
+  </p>
+  <p class="pub__venue"><em>{{ pub.venue | escape }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}{% if pub.note %} &middot; {{ pub.note | escape }}{% endif %}</p>
+  <p class="pub__links">
+    <a href="{{ pub.url }}"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> {% if pub.type == "Preprint" %}Preprint{% else %}Paper{% endif %}</a>
+    {% if pub.preprint_url %}<a href="{{ pub.preprint_url }}"><i class="fa-solid fa-file-pen" aria-hidden="true"></i> Preprint</a>{% endif %}
+    {% if pub.data_url %}<a href="{{ pub.data_url }}"><i class="fa-solid fa-database" aria-hidden="true"></i> Data</a>{% endif %}
+    {% if pub.code_url %}<a href="{{ pub.code_url }}"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>{% endif %}
+  </p>
+  {% if pub.abstract.size > 0 %}
+    <details class="pub__abstract">
+      <summary>Abstract</summary>
+      {% for p in pub.abstract %}<p>{{ p | escape }}</p>{% endfor %}
+    </details>
+  {% endif %}
+</article>
