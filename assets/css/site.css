@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Site styles. Colors and fonts are set once here at the top.
+   ========================================================================== */
+:root {
+  --text: #494e52;
+  --muted: #7a8288;
+  --link: #2f7f93;
+  --link-hover: #23606e;
+  --border: #f2f3f3;
+  --highlight-bg: #f2f8fa;
+  --highlight: #2f7f93;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --masthead-height: 64px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: calc(var(--masthead-height) + 16px); }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: #fff;
+}
+a { color: var(--link); text-decoration: none; overflow-wrap: anywhere; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+img { max-width: 100%; height: auto; }
+h1, h2, h3 { line-height: 1.25; color: #34383b; }
+h2 { margin-top: 2em; padding-bottom: .3em; border-bottom: 1px solid var(--border); font-size: 1.4rem; }
+h3 { font-size: 1.1rem; }
+
+/* ---- Top menu ----------------------------------------------------------- */
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+.masthead__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  min-height: var(--masthead-height);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .25rem 2rem;
+}
+.masthead__name { font-size: 1.25rem; font-weight: 700; color: #34383b; }
+.masthead__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1.5rem;
+}
+.masthead__menu a { color: var(--muted); font-weight: 500; }
+.masthead__menu a:hover, .masthead__menu a.active { color: var(--text); text-decoration: none; }
+.masthead__menu a.active { border-bottom: 2px solid var(--link); }
+
+/* ---- Page layout: sidebar + content ------------------------------------- */
+.layout {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 3rem;
+}
+.content { max-width: 800px; }
+.page-title { margin-top: 0; font-size: 2rem; }
+
+/* ---- Sidebar ------------------------------------------------------------ */
+.sidebar {
+  position: sticky;
+  top: calc(var(--masthead-height) + 2rem);
+  align-self: start;
+}
+.sidebar__photo { width: 175px; aspect-ratio: 1; object-fit: cover; border-radius: 50%; display: block; }
+.sidebar__name { margin: .75rem 0 .25rem; padding: 0; border: none; font-size: 1.25rem; }
+.sidebar__bio { margin: 0 0 1rem; font-size: .9rem; }
+.sidebar__links { list-style: none; margin: 0; padding: 0; font-size: .9rem; }
+.sidebar__links li { padding: .2rem 0; }
+.sidebar__links i { margin-right: .5rem; color: var(--muted); }
+
+/* ---- Publications ------------------------------------------------------- */
+.pub-filter { display: flex; gap: .5rem; margin: 1rem 0; }
+.pub-filter button {
+  font: inherit; font-size: .9rem; cursor: pointer;
+  padding: .3rem .9rem; border-radius: 999px;
+  border: 1px solid #d8dbdd; background: #fff; color: var(--text);
+}
+.pub-filter button[aria-pressed="true"] { background: var(--link); border-color: var(--link); color: #fff; }
+.first-only .pub:not(.pub--first),
+.first-only .pub-year[data-has-first="false"] { display: none; }
+
+.pub { padding: 1rem 1.25rem; margin: 1rem 0; border-left: 4px solid transparent; border-radius: 4px; }
+.pub--first { background: var(--highlight-bg); border-left-color: var(--highlight); }
+.pub__tags { display: flex; gap: .4rem; }
+.tag {
+  font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em;
+  padding: .1rem .5rem; border-radius: 4px; background: #eceeef; color: var(--muted);
+}
+.tag--first { background: var(--highlight); color: #fff; }
+.pub__title { margin: .4rem 0 .3rem; }
+.pub__authors, .pub__venue, .pub__links { margin: .15rem 0; font-size: .92rem; }
+.pub__authors strong { color: #34383b; }
+.pub__links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: .4rem; }
+.pub__abstract { margin-top: .4rem; font-size: .9rem; }
+.pub__abstract summary { cursor: pointer; color: var(--link); }
+
+/* ---- Misc --------------------------------------------------------------- */
+.float-right { float: right; margin: 0 0 1rem 1.5rem; max-width: 300px; }
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem; text-align: center; font-size: .85rem; color: var(--muted);
+}
+
+/* ---- Small screens: sidebar becomes a compact header -------------------- */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding-top: 1.5rem; }
+  .sidebar__text { min-width: 0; }
+  .sidebar { position: static; display: flex; gap: 1.25rem; align-items: center; }
+  .sidebar__photo { width: 96px; flex-shrink: 0; }
+  .sidebar__name { margin-top: 0; }
+  .sidebar__links { display: flex; flex-wrap: wrap; gap: 0 1rem; }
+  .float-right { float: none; display: block; margin: 0 auto 1rem; }
+  .masthead { position: static; }
+  .masthead__inner { padding: .75rem 1.5rem; }
+}

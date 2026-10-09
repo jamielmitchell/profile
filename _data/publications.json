@@ -1,0 +1,369 @@
+[
+  {
+    "doi": "10.25740/km066np4122",
+    "title": "The neural circuitry of reading: longitudinal evidence of stability and plasticity in children with dyslexia",
+    "year": 2026,
+    "venue": "PhD dissertation, Stanford University",
+    "type": "Dissertation",
+    "url": "https://doi.org/10.25740/km066np4122",
+    "abstract": [],
+    "first_author": true,
+    "authors": [
+      {
+        "name": "Mitchell, J. L.",
+        "me": true
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.dcn.2026.101703",
+    "title": "Visual Word Form Area demonstrates individual and task-agnostic consistency but inter-individual variability",
+    "year": 2026,
+    "venue": "Developmental Cognitive Neuroscience",
+    "type": "Journal article",
+    "url": "https://doi.org/10.1016/j.dcn.2026.101703",
+    "abstract": [
+      "Ventral Occipital Temporal Cortex (VOTC) contains a mosaic of categorically-selective functional regions that respond to visual stimuli. Within left VOTC lies the Visual Word Form Area (VWFA) - a text-selective region that develops as individuals learn to read. While there is consistency in the general location of text-selective responses - within the posterior occipitotemporal sulcus (OTS) - there is substantial variability across individuals in the size and precise anatomical location. Moreover, debate continues regarding whether VWFA a) encodes the visual features of text, versus b) is driven by the task of reading. Using functional magnetic resonance imaging, we scanned adults and children as they completed two tasks while viewing text, pseudo fonts, faces, objects, limbs: (1) a fixation task where participants ignored stimuli while making psychophysical judgements on a fixation dot, and (2) a one-back task, where they attend to stimuli to detect repeats. We found a consistent VWFA location could be identified on each individual’s cortical surface using either task. At the same time, the one-back task evoked a larger territory of text-selective response (leading to a larger ROI) than the fixation task. However, when averaged in template space, text-selective cortex could not be identified due to variability in the relative locations of text-, face-, object-, and limb-selective cortex. Thus, despite task-agnostic consistency in individual VWFA, text-selective responses are masked when averaged in template space due to variability in the exact configuration of category-selective regions. Furthermore, these effects were present in both children and adults."
+    ],
+    "preprint_url": "https://doi.org/10.1101/2025.07.23.666206",
+    "data_url": "https://doi.org/10.25740/jp789mc0395",
+    "code_url": "https://github.com/jamielmitchell/Mitchell_VWFAmethods_2025",
+    "first_author": true,
+    "authors": [
+      {
+        "name": "Mitchell, J. L.",
+        "me": true
+      },
+      {
+        "name": "Jimenez, M.",
+        "me": false
+      },
+      {
+        "name": "Stone, H. L.",
+        "me": false
+      },
+      {
+        "name": "Yablonski, M.",
+        "me": false
+      },
+      {
+        "name": "Yeatman, J. D.",
+        "me": false
+      }
+    ]
+  },
+  {
+    "doi": "10.64898/2026.07.31.742142",
+    "title": "Anatomy of the Visual Word Form Area in Dyslexia",
+    "year": 2026,
+    "venue": "bioRxiv",
+    "type": "Preprint",
+    "url": "https://doi.org/10.64898/2026.07.31.742142",
+    "abstract": [
+      "The Visual Word Form Area (VWFA), located in ventral occipitotemporal cortex, plays a critical role in skilled reading. Researchers have theorized that the VWFA develops in its specific anatomical location due to the convergence of major white matter tracts and proximity to functionally similar regions. This suggests that precise anatomical positioning may be crucial for optimal VWFA function. Previous research has identified several functional differences in this region between typical and struggling readers (i.e. dyslexia): struggling readers show weaker text-selective responses and often exhibit a smaller or even absent VWFA. However, it remains unexplored whether the precise anatomical location of this region also differs between typical and struggling readers. We tested whether VWFA anatomy differs between children with and without dyslexia (N=87). Participants completed a functional localizer, which we used to manually define the VWFA in each individual’s native anatomy. We examined whether: (1) VWFA anatomical location relates to reading ability, (2) children with dyslexia show greater variability in VWFA location compared to typical readers, and (3) VWFA location with respect to white matter tracts relates to reading ability. Results reveal that, despite being smaller in children with dyslexia, there is no relationship between VWFA location and reading ability. Specifically, individual VWFA location relative to anatomy, relative to other’s VWFAs, and relative to white matter tracts, is not related to reading ability. These findings suggest that while the VWFA’s general anatomy may be facilitated by development, its precise location remains stable and unrelated to reading proficiency."
+    ],
+    "data_url": "https://doi.org/10.25740/qq284rg5214",
+    "first_author": true,
+    "authors": [
+      {
+        "name": "Mitchell, J. L.",
+        "me": true
+      },
+      {
+        "name": "Yablonski, M.",
+        "me": false
+      },
+      {
+        "name": "Jimenez, M.",
+        "me": false
+      },
+      {
+        "name": "Chiu, H.",
+        "me": false
+      },
+      {
+        "name": "Yeatman, J. D.",
+        "me": false
+      }
+    ]
+  },
+  {
+    "doi": "10.64898/2026.08.14.744903",
+    "title": "Functional connectivity scaffolds the emergence of the visual word form area",
+    "year": 2026,
+    "venue": "bioRxiv",
+    "type": "Preprint",
+    "url": "https://doi.org/10.64898/2026.08.14.744903",
+    "abstract": [
+      "Complex cognitive tasks, like reading, require coordinated computations across distant cortical regions. Connectivity among regions is therefore key for understanding the neurobiological basis of behavior. It remains an open question whether connectivity serves as an innate organizational blueprint that guides functional specialization, or if it evolves with learning. Here, we address this fundamental question through the prism of learning to read: We measured functional connectivity at five timepoints over a year in children with dyslexia who participated in an intensive reading intervention. We found that specific patterns of functional connectivity of the reading circuitry were in place prior to the intervention, and remained stable over time. Further, functional connectivity before the intervention predicted the location of text-selective regions a year later, showing that connectivity precedes and predicts functional specialization that emerge with learning. These findings support a view of functional connectivity as a stable organizational principle of high-level cortex."
+    ],
+    "first_author": false,
+    "authors": [
+      {
+        "name": "Yablonski, M.",
+        "me": false
+      },
+      {
+        "name": "Mitchell, J. L.",
+        "me": true
+      },
+      {
+        "name": "Stone, H. L.",
+        "me": false
+      },
+      {
+        "name": "Jimenez, M.",
+        "me": false
+      },
+      {
+        "name": "Yeatman, J. D.",
+        "me": false
+      }
+    ]
+  },
+  {
+    "doi": "10.64898/2026.04.18.719321",
+    "title": "Highly replicable multisite patterns of adolescent white matter maturation",
+    "year": 2026,
+    "venue": "bioRxiv",
+    "type": "Preprint",
+    "url": "https://doi.org/10.64898/2026.04.18.719321",
+    "abstract": [
+      "The Adolescent Brain Cognitive Development (ABCD) Study is the largest U.S.-based neuroimaging initiative of adolescent brain maturation. Diffusion MRI (dMRI) provides unique insights into white matter organization, yet applying advanced processing pipelines and managing technical variability across scanning environments remains challenging at scale. To address these issues, we present ABCD-BIDS Community Collection (ABCC) release 3.1.0, including a curated resource of more than 24,000 fully processed ABCD dMRI datasets. ABCC provides fully processed images, nuanced image quality metrics, advanced microstructural measures, and person-specific bundle tractography. Evaluating these rich data revealed that measures of diffusion restriction and non-Gaussianity—in particular the intracellular volume fraction from NODDI and return-to-origin probability from MAP-MRI—were highly sensitive to neurodevelopment and robust to variation in image quality. Additionally, harmonization of microstructural features markedly improved the cross-vendor generalizability of developmental effects. Together, ABCC accelerates reproducible, rigorous research on adolescent white matter development."
+    ],
+    "first_author": false,
+    "authors": [
+      {
+        "name": "Meisler, S. L.",
+        "me": false
+      },
+      {
+        "name": "Cieslak, M.",
+        "me": false
+      },
+      {
+        "name": "Bagautdinova, J.",
+        "me": false
+      },
+      {
+        "name": "…",
+        "me": false
+      },
+      {
+        "name": "Mitchell, J. L.",
+        "me": true
+      },
+      {
+        "name": "…",
+        "me": false
+      },
+      {
+        "name": "Satterthwaite, T. D.",
+        "me": false
+      }
+    ]
+  },
+  {
+    "doi": "10.64898/2026.04.06.716640",
+    "title": "Sulcal anatomy of ventral temporal cortex and reading development",
+    "year": 2026,
+    "venue": "bioRxiv",
+    "type": "Preprint",
+    "url": "https://doi.org/10.64898/2026.04.06.716640",
+    "abstract": [
+      "Individual differences in cognitive abilities have been linked to variability in cortical folding, a stable neuroanatomical scaffold largely established in utero. In the domain of reading, recent findings in small groups of typical readers suggest that a sulcal interruption (superficial annectant gyrus, gyral gap) in the left posterior occipital temporal sulcus (lhpOTS) predicts better reading skills, posing the lhpOTS as a potential early biomarker of reading difficulties. However, it remains unknown whether this relationship found in typical readers generalizes to the dyslexic population and whether the lhpOTS can serve as a biomarker for dyslexia or predict response to targeted instruction.To fill these gaps, we examine the patterns of the lhpOTS in 209 children, including children with dyslexia, from four independently-collected samples. In typical readers, we find that the relationship between the lhpOTS and reading skills is robust, replicating across binary and continuous quantifications of the sulcal interruption. However, lhpOTS patterns neither distinguish dyslexic children from typical readers nor do they predict response to intervention. Instead, targeted reading intervention drives long-term gains in reading skills that are equivalent irrespective of VOTC anatomy. Together, these findings distinguish neuroanatomical correlates of skilled reading from determinants of reading impairment and learning capacity and emphasize the importance of the educational environment in supporting reading acquisition for children with dyslexia.",
+      "SIGNIFICANCE STATEMENT",
+      "Early predictors of dyslexia are important for understanding the etiology of reading difficulties and informing early intervention. One candidate biomarker for dyslexia is the left posterior occipital temporal sulcus (lhpOTS), a neuroanatomical feature established before birth. In typical readers, the presence of an interruption in the lhpOTS has been linked to better reading skills. Here, we examine this neuroanatomical feature in 209 children with and without dyslexia. While the lhpOTS reliably relates to reading skill in typical readers, it neither differentiates dyslexic from typical readers nor predicts response to intensive reading intervention. These results show that brain anatomy reflects reading proficiency but does not constrain learning and highlights the power of targeted intervention to support reading development."
+    ],
+    "first_author": false,
+    "authors": [
+      {
+        "name": "Yao, J. K.",
+        "me": false
+      },
+      {
+        "name": "Mitchell, J. L.",
+        "me": true
+      },
+      {
+        "name": "Davison, A.",
+        "me": false
+      },
+      {
+        "name": "Yeatman, J. D.",
+        "me": false
+      }
+    ]
+  },
+  {
+    "doi": "10.1523/jneurosci.1767-24.2025",
+    "title": "Anatomically Distinct Regions in the Inferior Frontal Cortex Are Modulated by Task and Reading Skill",
+    "year": 2025,
+    "venue": "The Journal of Neuroscience",
+    "type": "Journal article",
+    "url": "https://doi.org/10.1523/jneurosci.1767-24.2025",
+    "abstract": [
+      "The inferior frontal cortex (IFC) is a critical region for reading and language. This part of the cortex is highly heterogeneous in its structural and functional organization and shows high variability across individuals. Despite decades of research, the relationship between specific IFC regions and reading skill remains unclear. To shed light on the function of IFC in reading, we aim to (1) characterize the functional landscape of text-selective responses in IFC, while accounting for interindividual variability, and (2) examine how text-selective regions in the IFC relate to reading proficiency. To this end, children with a wide range of reading ability ( N = 66; age 7–14 years, 34 female, 32 male) completed functional MRI scans while performing two tasks on text and nontext visual stimuli. Importantly, both tasks do not explicitly require reading and can be performed on all visual stimuli. This design allows us to tease apart stimulus-driven responses from task-driven responses and examine where in IFC task and stimulus interact. We were able to identify three anatomically distinct, text-selective clusters of activation in the IFC, inferior frontal sulcus (IFS), and dorsal and ventral precentral gyrus (PrG). These three regions showed a strong task effect that was highly specific to text. Furthermore, text selectivity in the IFS and dorsal PrG was associated with reading proficiency, such that better readers showed higher selectivity to text. These findings suggest that text-selective regions in the IFC are sensitive to both stimulus and task and highlight the importance of this region for proficient reading."
+    ],
+    "preprint_url": "https://doi.org/10.1101/2024.09.11.612349",
+    "first_author": false,
+    "authors": [
+      {
+        "name": "Stone, H. L.",
+        "me": false
+      },
+      {
+        "name": "Mitchell, J. L.",
+        "me": true
+      },
+      {
+        "name": "Fuentes-Jimenez, M.",
+        "me": false
+      },
+      {
+        "name": "Tran, J. E.",
+        "me": false
+      },
+      {
+        "name": "Yeatman, J. D.",
+        "me": false
+      },
+      {
+        "name": "Yablonski, M.",
+        "me": false
+      }
+    ]
+  },
+  {
+    "doi": "10.1038/s41467-025-67054-3",
+    "title": "The balance between stability and plasticity of the visual word form area in dyslexia",
+    "year": 2025,
+    "venue": "Nature Communications",
+    "type": "Journal article",
+    "url": "https://doi.org/10.1038/s41467-025-67054-3",
+    "abstract": [
+      "Understanding the balance between plastic and persistent traits in the dyslexic brain is critical for developing effective interventions. This longitudinal intervention study examines the Visual Word Form Area in dyslexic and typical readers, exploring how this key component of the brain’s reading circuitry changes with learning. We find that children with dyslexia show significant differences in Visual Word Form Area presence, size, and tuning properties compared to typical readers. While reading intervention improves reading skills and increases Visual Word Form Area size, disparities persist a year later, suggesting that Visual Word Form Area abnormalities are enduring traits of dyslexia. Our results reveal long-term neural and behavioral changes, while also elucidating stable differences in the functional architecture of the dyslexic brain. This work provides comprehensive insights into the potential and limitations of short-term learning-induced plasticity in human visual cortex."
+    ],
+    "preprint_url": "https://doi.org/10.1101/2025.01.14.632854",
+    "data_url": "https://doi.org/10.25740/bq006zp5312",
+    "first_author": true,
+    "authors": [
+      {
+        "name": "Mitchell, J. L.",
+        "me": true
+      },
+      {
+        "name": "Yablonski, M.",
+        "me": false
+      },
+      {
+        "name": "Stone, H. L.",
+        "me": false
+      },
+      {
+        "name": "Jimenez, M.",
+        "me": false
+      },
+      {
+        "name": "Takada, M. E.",
+        "me": false
+      },
+      {
+        "name": "Tang, K. A.",
+        "me": false
+      },
+      {
+        "name": "Tran, J. E.",
+        "me": false
+      },
+      {
+        "name": "Chou, C.",
+        "me": false
+      },
+      {
+        "name": "Yeatman, J. D.",
+        "me": false
+      }
+    ]
+  },
+  {
+    "doi": "10.3389/feduc.2024.1494431",
+    "title": "Development and validation of a rapid and precise online sentence reading efficiency assessment",
+    "year": 2024,
+    "venue": "Frontiers in Education",
+    "type": "Journal article",
+    "url": "https://doi.org/10.3389/feduc.2024.1494431",
+    "abstract": [
+      "Introduction",
+      "The speed at which students can accurately read and understand connected text is at the foundation of reading development. Timed reading measures go under a variety of names (e.g., reading fluency, reading efficiency, etc) and involve different levels of demands on comprehension, making it hard to interpret the extent to which scores reflect differences in reading efficiency versus comprehension.",
+      "Methods",
+      "Here we define a new measure of silent sentence reading efficiency (SRE) and explore key aspects of item development for an unproctored, online SRE assessment (ROAR-SRE). In doing so, we set forth an argument for developing sentences that are simple assertions, with an unambiguous answer, requiring minimal background knowledge and vocabulary. We then run a large-scale validation study to document convergent validity between ROAR-SRE and other measures of reading. Finally we validate the reliability and accuracy of using artificial intelligence (AI) to generate matched test forms.",
+      "Results",
+      "We find that a short, one-minute SRE assessment is highly correlated with other reading measures and has exceptional reliability. Moreover, AI can automatically generate test forms that are matched to manually-authored test forms.",
+      "Discussion",
+      "Together these results highlight the potential for regular screening and progress monitoring at scale with ROAR-SRE."
+    ],
+    "preprint_url": "https://doi.org/10.31219/osf.io/u3mjz",
+    "first_author": false,
+    "authors": [
+      {
+        "name": "Yeatman, J. D.",
+        "me": false
+      },
+      {
+        "name": "Tran, J. E.",
+        "me": false
+      },
+      {
+        "name": "Burkhardt, A. K.",
+        "me": false
+      },
+      {
+        "name": "Ma, W. A.",
+        "me": false
+      },
+      {
+        "name": "Mitchell, J. L.",
+        "me": true
+      },
+      {
+        "name": "Yablonski, M.",
+        "me": false
+      },
+      {
+        "name": "Gijbels, L.",
+        "me": false
+      },
+      {
+        "name": "Townley-Flores, C.",
+        "me": false
+      },
+      {
+        "name": "Richie-Halford, A.",
+        "me": false
+      }
+    ]
+  },
+  {
+    "doi": "10.1093/oxfordhb/9780197508268.013.5",
+    "title": "Prevailing Theories of Reading Development and Deafness",
+    "year": 2020,
+    "venue": "The Oxford Handbook of Deaf Studies in Literacy",
+    "type": "Book chapter",
+    "url": "https://doi.org/10.1093/oxfordhb/9780197508268.013.5",
+    "abstract": [
+      "Understanding how children learn to read and become proficient readers has been facilitated by models of reading developed over the past three decades. These include, among others, the Simple View of Reading, the lexical quality hypothesis, and the lattice model. These models have shaped effective reading interventions for children with typical hearing and have implications for understanding dyslexia and dysgraphia. Importantly, they can provide insights into why many children who are deaf and hard of hearing (DHH) have so much trouble learning to read and write. This chapter uses the lattice model of reading development to illustrate where DHH children may encounter barriers to learning to read and how such barriers might be overcome. The lattice model proposes that reciprocal and interacting effects of linguistic processes, text-specific processes, instruction, and cognitive, social, and regulatory processes all contribute to children’s reading development. Included is a discussion of a new version of the lattice model that has been adapted to support the research findings for children who are DHH."
+    ],
+    "first_author": false,
+    "authors": [
+      {
+        "name": "Connor, C.",
+        "me": false
+      },
+      {
+        "name": "Greenberg, J.",
+        "me": true
+      }
+    ]
+  }
+]

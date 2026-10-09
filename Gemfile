@@ -1,12 +1,12 @@
-source 'https://rubygems.org'
+# Only used for previewing the site on your own computer.
+# GitHub builds the live site with the same "github-pages" setup.
+source "https://rubygems.org"
 
-group :jekyll_plugins do
-  gem 'jekyll'
-  gem 'jekyll-feed'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-redirect-from'
-  gem 'jemoji'
-  gem 'webrick', '~> 1.8'
-end
+gem "github-pages", group: :jekyll_plugins
+gem "webrick"
 
-gem 'github-pages'
+# Needed by newer Ruby versions
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+gem "logger"
