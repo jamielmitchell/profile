@@ -338,8 +338,10 @@ def build_publications(settings):
 
 
 def build_peer_reviews(settings):
+    """One {journal, year} entry per review. The Service page merges these with
+    _data/peer_reviews_manual.yml, so both lists use the same format."""
     data = orcid("peer-reviews", settings["orcid"]) or {"group": []}
-    journals = []
+    reviews = []
     for group in data["group"]:
         issn = next((e["external-id-value"].replace("issn:", "")
                      for e in (group.get("external-ids") or {}).get("external-id", [])
@@ -357,9 +359,9 @@ def build_peer_reviews(settings):
         if not name:
             s = group["peer-review-group"][0]["peer-review-summary"][0]
             name = (s.get("convening-organization") or {}).get("name", "Journal")
-        journals.append({"journal": name, "count": len(years), "years": sorted(set(years))})
-    journals.sort(key=lambda j: (-(max(j["years"]) if j["years"] else 0), j["journal"]))
-    return journals
+        reviews.extend({"journal": name, "year": y} for y in years)
+    reviews.sort(key=lambda r: (r["journal"].lower(), r["year"]))
+    return reviews
 
 
 def write_json(path, data):
@@ -379,7 +381,7 @@ def main():
     write_json(DATA / "publications.json", pubs)
     print("Fetching peer reviews from ORCID...")
     reviews = build_peer_reviews(settings)
-    print(f"  {sum(r['count'] for r in reviews)} reviews for {len(reviews)} journal(s)")
+    print(f"  {len(reviews)} reviews for {len({r['journal'] for r in reviews})} journal(s)")
     write_json(DATA / "peer_reviews.json", reviews)
 
 

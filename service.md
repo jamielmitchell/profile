@@ -5,11 +5,17 @@ permalink: /service/
 
 ## Peer Review
 
-<!-- This list updates itself from the peer reviews on your ORCID record. -->
-{% if site.data.peer_reviews.size > 0 %}
+<!--
+  Combines reviews from ORCID (updated automatically) with the ones you list in
+  _data/peer_reviews_manual.yml. To add a review, edit that file, not this one.
+-->
+{% assign reviews = site.data.peer_reviews | default: empty %}
+{% if site.data.peer_reviews_manual %}{% assign reviews = reviews | concat: site.data.peer_reviews_manual %}{% endif %}
+{% assign journals = reviews | group_by: "journal" | sort_natural: "name" %}
+{% if journals.size > 0 %}
 Ad hoc reviewer for:
-{% for j in site.data.peer_reviews %}
-- *{{ j.journal }}* ({{ j.years | join: ", " }})
+{% for j in journals %}{% assign years = j.items | map: "year" | uniq | sort %}
+- *{{ j.name }}* ({{ years | join: ", " }})
 {% endfor %}
 {% endif %}
 

@@ -16,6 +16,7 @@ Live at **https://jamielmitchell.github.io/profile/**
 | The top menu (add, remove, or reorder pages) | `_data/navigation.yml` |
 | Colors and fonts | The top of `assets/css/site.css` |
 | Hide, fix, or add a publication | `_data/publication_settings.yml` |
+| Add a peer review that isn't on ORCID | `_data/peer_reviews_manual.yml` |
 
 Pages are written in [Markdown](https://www.markdownguide.org/cheat-sheet/): `## Heading`, `**bold**`, `*italic*`, `- bullet`, `[link text](https://...)`.
 
@@ -43,6 +44,9 @@ To update right away: on GitHub, go to **Actions → Update from ORCID and deplo
 **To tweak how a publication shows up** (hide one, mark co-first authorship,
 add a note like "Under review", add something that isn't on ORCID), edit
 `_data/publication_settings.yml`. Instructions are inside the file.
+
+**To add a peer review that isn't on ORCID**, add two lines to
+`_data/peer_reviews_manual.yml`. It's merged with your ORCID reviews on the Service page.
 
 Don't edit `_data/publications.json` or `_data/peer_reviews.json` by hand.
 They get overwritten each time the site rebuilds.
@@ -81,6 +85,7 @@ _config.yml                       ← name, sidebar, links
 _data/
   navigation.yml                  ← top menu
   publication_settings.yml        ← publication tweaks
+  peer_reviews_manual.yml         ← reviews not on ORCID (edit this)
   publications.json               ← auto-generated from ORCID
   peer_reviews.json               ← auto-generated from ORCID
 _layouts/default.html             ← page frame: menu + sidebar + footer
